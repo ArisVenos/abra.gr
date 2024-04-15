@@ -4,6 +4,7 @@ import { Grid, GridItem } from '@chakra-ui/react';
 import NavBar from './components/NavBar.jsx';
 import Footer from './components/Footer.jsx';
 import Mainpage from './components/Mainpage.jsx';
+import Contact from './components/Contact.jsx';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<Mainpage />} />
+                        <Route path="/Contact" element={<Contact />} />
                     </Routes>
                 </BrowserRouter>
             </GridItem>
