@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Text, Flex, Image } from '@chakra-ui/react';
-import { Card, CardBody , Spacer , Heading , FormControl, FormLabel, FormErrorMessage, FormHelperText, Input } from '@chakra-ui/react';
+import { Card, CardBody , Spacer , Heading , FormControl, FormLabel, FormErrorMessage, FormHelperText, Input , Textarea , Button} from '@chakra-ui/react';
 import bg from './images/bg.png';
 import drakos from './images/drakos.png';
 
@@ -30,14 +30,19 @@ const Contact = () => {
                                 abrakatampra@gmail.com
                             </Text>
                             <Flex flexDirection="row" paddingTop="50px">
-                                <FormControl paddingRight="200px">
-                                    <center>
-                                    <FormLabel>Email address</FormLabel>
-                                    </center>
-                                    <Input type='email' />
-                                    <FormHelperText>We'll never share your email.</FormHelperText>
+                                <FormControl paddingRight="50px" >
+                                    <Heading as="b" color="#c7260c">Επικοινωνείστε μαζί μας!</Heading>
+                                    <FormLabel paddingTop="20px">Όνομα</FormLabel>
+                                    <Input type='name' placeholder='Γράψτε το όνομά σας:'/>
+                                    <FormLabel paddingTop="20px">Email</FormLabel>
+                                    <Input type='email' placeholder='Γράψτε το email σας:'/>
+                                    <FormLabel paddingTop="20px">Θέμα</FormLabel>
+                                    <Input type='subject' placeholder='Γράψτε μας γιατι μας στέλνετε:'/>
+                                    <FormLabel paddingTop="20px">Μήνυμα</FormLabel>
+                                    <Textarea type='message' placeholder='Γράψτε το μήνυμά σας:' paddingBottom="20px"/>
+                                    <Button colorScheme="green" type="submit" >Αποστολή</Button>
                                 </FormControl>
-                                <Image src={drakos} height="200px" ></Image>
+                                <Image src={drakos} height="300px" ></Image>
                             </Flex>
                         </center>
                     </CardBody>
