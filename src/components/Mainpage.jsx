@@ -2,6 +2,11 @@ import React from 'react';
 import { AspectRatio, Box, Flex, Image, Spacer, Text } from '@chakra-ui/react';
 import { Card, CardBody } from '@chakra-ui/react';
 import bg from './images/bg.png';
+import s1 from './images/s1.png';
+import s2 from './images/s2.png';
+import s3 from './images/s3.png';
+import s4 from './images/s4.png';
+import s5 from './images/s5.png';
 
 const MainPage = () => {
     return (
@@ -29,12 +34,22 @@ const MainPage = () => {
             </Flex>
         </Flex>
         <Flex alignItems='center' justifyContent='center' bg='white' paddingTop="50px">
-            <Card bg='#4692f0' boxShadow='lg' borderRadius='lg' width='900px' alignItems='center' justifyContent='center' >
-                <Text textAlign="center" width="500px" textColor="white">Το ΑΜΠΡΑ ΚΑΤΑΜΠΡΑ απευθύνεται σε παιδιά ηλικίας έως 12 ετών και δίνει μια νέα διάσταση στο παιδικό βιβλίο. 
-                    Η υπέροχη αυθεντική μουσική επένδυση συνοδεύει γλυκά την παιδική φαντασία. 
-                    Η παλέτα και η έμπνευση των πιο γνωστών καλλιτεχνών του είδους, υπογράφουν την εικονογράφηση. 
-                    Οι μικροί μας φίλοι ταυτόχρονα μαθαίνουν να διαβάζουν, να ζωγραφίζουν και να ακούν.
-                </Text>
+            <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' m="10px">
+                <Image src={s1} height="300px"></Image>
+            </Card>
+            <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' m="10px">
+                <Image src={s2} height="300px"></Image>
+            </Card>
+            <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' m="10px">
+                <Image src={s3} height="300px"></Image>
+            </Card>
+        </Flex> 
+        <Flex alignItems='center' justifyContent='center' bg='white' paddingTop="20px">
+            <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' marginRight="10px">
+                <Image src={s4} height="300px"></Image>
+            </Card>
+            <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' marginLeft="10px">
+                <Image src={s5} height="300px"></Image>
             </Card>
         </Flex> 
         </div>
