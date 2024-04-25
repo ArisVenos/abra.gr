@@ -31,7 +31,7 @@ const Contact = () => {
                             </Text>
                             <Flex flexDirection="row" paddingTop="50px">
                                 <FormControl paddingRight="50px" >
-                                    <Heading as="b" color="#c7260c">Επικοινωνείστε μαζί μας!</Heading>
+                                    <Heading as="b" color="#c7260c">Επικοινωνήστε μαζί μας!</Heading>
                                     <FormLabel paddingTop="20px">Όνομα</FormLabel>
                                     <Input type='name' placeholder='Γράψτε το όνομά σας:'/>
                                     <FormLabel paddingTop="20px">Email</FormLabel>

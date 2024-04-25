@@ -1,6 +1,7 @@
 import React from 'react';
 import { AspectRatio, Box, Flex, Image, Spacer, Text } from '@chakra-ui/react';
 import { Card, CardBody } from '@chakra-ui/react';
+import {Link} from 'react-router-dom';
 import bg from './images/bg.png';
 import s1 from './images/s1.png';
 import s2 from './images/s2.png';
@@ -35,21 +36,31 @@ const MainPage = () => {
         </Flex>
         <Flex alignItems='center' justifyContent='center' bg='white' paddingTop="50px">
             <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' m="10px">
-                <Image src={s1} height="300px"></Image>
+                <Link to="/setA">
+                    <Image src={s1} height="300px"></Image>
+                </Link>
             </Card>
             <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' m="10px">
-                <Image src={s2} height="300px"></Image>
+                <Link to="/setB">
+                    <Image src={s2} height="300px"></Image>
+                </Link>
             </Card>
             <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' m="10px">
-                <Image src={s3} height="300px"></Image>
+                <Link to="/setC">
+                    <Image src={s3} height="300px"></Image>
+                </Link>
             </Card>
         </Flex> 
         <Flex alignItems='center' justifyContent='center' bg='white' paddingTop="20px">
             <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' marginRight="10px">
-                <Image src={s4} height="300px"></Image>
+                <Link to="/setD">
+                    <Image src={s4} height="300px"></Image>
+                </Link>
             </Card>
             <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' marginLeft="10px">
-                <Image src={s5} height="300px"></Image>
+                <Link to="/setE">
+                    <Image src={s5} height="300px"></Image>
+                </Link>
             </Card>
         </Flex> 
         </div>

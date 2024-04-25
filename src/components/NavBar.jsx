@@ -11,6 +11,9 @@ const NavBar = () => {
   const navigateToHome = () => {
     window.location.href = "/";
   };
+  const navigateToBooks = () => {
+    window.location.href = "/Sets";
+  };
 
   return (
     <div style={{ backgroundColor: "#4692f0" }}>
@@ -43,6 +46,7 @@ const NavBar = () => {
             borderRadius="0px"
             height="100px"
             border="0px"
+            onClick={navigateToBooks}
           >
             ΒΙΒΛΙΑ
           </Button>
