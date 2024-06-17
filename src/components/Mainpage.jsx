@@ -1,5 +1,5 @@
 import React from 'react';
-import { AspectRatio, Box, Flex, Image, Spacer, Text } from '@chakra-ui/react';
+import { AspectRatio, Box, Flex, Image, Spacer, Text, Heading} from '@chakra-ui/react';
 import { Card, CardBody } from '@chakra-ui/react';
 import {Link} from 'react-router-dom';
 import bg from './images/bg.png';
@@ -13,9 +13,10 @@ const MainPage = () => {
     return (
         <div>
             <Flex flexDirection='column' alignItems='center' bgImage={`url(${bg})`} >
-            <Flex justifyContent='center' paddingTop="20px" paddingBottom="100px">
+            <Flex justifyContent='center' paddingTop="20px" paddingBottom="80px">
                 <Card bg='white' boxShadow='lg' borderRadius='lg' width='900px'>
                     <CardBody p="30px">
+                    <Heading textAlign="center" paddingBottom="20px" color="#c7260c" size="lg">ΑΜΠΡΑ ΚΑΤΑΜΠΡΑ</Heading>
                         <AspectRatio ratio={16/9}>
                             <iframe
                                 title='abracadabra'
@@ -36,29 +37,29 @@ const MainPage = () => {
         </Flex>
         <Flex alignItems='center' justifyContent='center' bg='white' paddingTop="50px">
             <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' m="10px">
-                <Link to="/setA">
+                <Link to="/SetA">
                     <Image src={s1} height="300px"></Image>
                 </Link>
             </Card>
             <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' m="10px">
-                <Link to="/setB">
+                <Link to="/SetB">
                     <Image src={s2} height="300px"></Image>
                 </Link>
             </Card>
             <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' m="10px">
-                <Link to="/setC">
+                <Link to="/SetC">
                     <Image src={s3} height="300px"></Image>
                 </Link>
             </Card>
         </Flex> 
         <Flex alignItems='center' justifyContent='center' bg='white' paddingTop="20px">
             <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' marginRight="10px">
-                <Link to="/setD">
+                <Link to="/SetD">
                     <Image src={s4} height="300px"></Image>
                 </Link>
             </Card>
             <Card boxShadow='lg' borderRadius='lg' width='300px' alignItems='center' justifyContent='center' marginLeft="10px">
-                <Link to="/setE">
+                <Link to="/SetE">
                     <Image src={s5} height="300px"></Image>
                 </Link>
             </Card>

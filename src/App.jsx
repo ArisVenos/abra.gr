@@ -17,7 +17,6 @@ function App() {
         <Grid templateAreas={'"nav" "route" "footer"'}>
             <GridItem area='nav' bg='white'><NavBar /></GridItem>
             <GridItem area='route' bg='white'>
-                <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<Mainpage />} />
                         <Route path="/Contact" element={<Contact />} />
@@ -28,7 +27,6 @@ function App() {
                         <Route path="/SetE" element={<BooksE />} />
                         <Route path="/Sets" element={<Sets />} />
                     </Routes>
-                </BrowserRouter>
             </GridItem>
             <GridItem area='footer'> <Footer /></GridItem>
         </Grid>    
