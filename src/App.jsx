@@ -11,6 +11,7 @@ import BooksC from './components/BooksC.jsx';
 import BooksD from './components/BooksD.jsx';
 import BooksE from './components/BooksE.jsx';
 import Sets from './components/Sets.jsx';
+import NotFound from './components/NotFound.jsx';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                         <Route path="/SetD" element={<BooksD />} />
                         <Route path="/SetE" element={<BooksE />} />
                         <Route path="/Sets" element={<Sets />} />
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
             </GridItem>
             <GridItem area='footer'> <Footer /></GridItem>
